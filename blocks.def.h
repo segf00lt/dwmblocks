@@ -3,7 +3,7 @@ static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"| ", "setxkbmap -query | grep 'layout' | tr -s ' ' | cut -d ' ' -f 2", 0, 10},
 	{"VOL: ", "volumeget", 0, 15},
-	{"", "date '+%a %b %d %Y %H:%M'", 1, 1},
+	{"", "date '+%a %b %d %Y %H:%M |'", 1, 1},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
