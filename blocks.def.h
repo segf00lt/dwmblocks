@@ -2,7 +2,7 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"| ", "setxkbmap -query | grep 'layout' | tr -s ' ' | cut -d ' ' -f 2", 0, 10},
-	{"VOL: ", "volumeget", 0, 15},
+	{"VOL: ", "volgetpulse", 0, 15},
 	{"", "date '+%a %b %d %Y %H:%M |'", 1, 1},
 };
 
